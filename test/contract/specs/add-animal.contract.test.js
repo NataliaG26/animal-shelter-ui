@@ -4,13 +4,13 @@ import { AnimalController } from '../../../controllers';
 import { eachLike } from '@pact-foundation/pact/src/dsl/matchers';
 
 describe('Animal Service', () => {
-    describe('When a request to list all animals is made', () => {
+    describe('When a request delete an animal', () => {
 
         beforeAll(async () => {
             await provider.setup();
             await provider.addInteraction({
-                uponReceiving: 'a request to list all animals',
-                state: "has animals",
+                uponReceiving: 'a request to add a new animal',
+                state: "hasn't animals",
                 withRequest: {
                     method: 'POST',
                     path: '/animals'

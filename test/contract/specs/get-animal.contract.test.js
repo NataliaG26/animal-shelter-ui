@@ -9,8 +9,8 @@ describe('Animal Service', () => {
         beforeAll(async () => {
             await provider.setup();
             await provider.addInteraction({
-                uponReceiving: 'a request to list all animals',
-                state: "has animals",
+                uponReceiving: 'a request to get an animal',
+                state: "has the animal to get",
                 withRequest: {
                     method: 'GET',
                     path: '/animals/manchas'
