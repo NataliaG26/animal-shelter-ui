@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Animal Service #create When a request to add an animal 1`] = `
+Object {
+  "breed": "Bengali",
+  "gender": "Female",
+  "id": 10,
+  "name": "manchas",
+  "vaccinated": true,
+  "vaccines": Array [
+    "lupus",
+    "rabia",
+  ],
+}
+`;
+
+exports[`Animal Service #delete When a request to delete an animal 1`] = `""`;
+
+exports[`Animal Service #editAnimal When a request to edit an animal 1`] = `
+Object {
+  "breed": "Bengali",
+  "gender": "Female",
+  "id": 10,
+  "name": "manchas",
+  "vaccinated": true,
+  "vaccines": Array [
+    "lupus",
+    "rabia",
+  ],
+}
+`;
+
+exports[`Animal Service #getAnimal When a request to  get an animal 1`] = `
+Object {
+  "breed": "Bengali",
+  "gender": "Female",
+  "id": 10,
+  "name": "manchas",
+  "vaccinated": true,
+  "vaccines": Array [
+    "lupus",
+    "rabia",
+  ],
+}
+`;
+
+exports[`Animal Service #getLis When a request to list all animals is made 1`] = `
+Array [
+  Object {
+    "breed": "Bengali",
+    "gender": "Female",
+    "name": "manchas",
+    "vaccinated": true,
+  },
+]
+`;
